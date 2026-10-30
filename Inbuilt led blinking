@@ -1,0 +1,17 @@
+// Board name : ESP32-LyraT-Mini_V1.2
+// The above board has two led, 
+// Green led to the pin number 22, Blue led to the pin number 27
+
+#define LED_PIN 22
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_PIN, HIGH);
+  delay(1000);
+
+  digitalWrite(LED_PIN, LOW);
+  delay(1000);
+}
